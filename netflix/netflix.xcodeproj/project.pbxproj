@@ -16,6 +16,7 @@
 		EEEF90862846B4ED00DCB9E5 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEF90852846B4ED00DCB9E5 /* Movie.swift */; };
 		EEEF90882846B53B00DCB9E5 /* StandardHomeMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEF90872846B53B00DCB9E5 /* StandardHomeMovie.swift */; };
 		EEEF908D2846B5D900DCB9E5 /* GlobalHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEF908C2846B5D900DCB9E5 /* GlobalHelpers.swift */; };
+		EEEF908F2846BA9300DCB9E5 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEF908E2846BA9300DCB9E5 /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		EEEF90852846B4ED00DCB9E5 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		EEEF90872846B53B00DCB9E5 /* StandardHomeMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardHomeMovie.swift; sourceTree = "<group>"; };
 		EEEF908C2846B5D900DCB9E5 /* GlobalHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalHelpers.swift; sourceTree = "<group>"; };
+		EEEF908E2846BA9300DCB9E5 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,11 +63,11 @@
 		EEEF90712846B07E00DCB9E5 /* netflix */ = {
 			isa = PBXGroup;
 			children = (
+				EEEF90722846B07E00DCB9E5 /* netflixApp.swift */,
 				EEEF908C2846B5D900DCB9E5 /* GlobalHelpers.swift */,
 				EEEF908A2846B5A300DCB9E5 /* Model */,
 				EEEF90892846B59400DCB9E5 /* Views */,
 				EEEF908B2846B5AC00DCB9E5 /* ViewModels */,
-				EEEF90722846B07E00DCB9E5 /* netflixApp.swift */,
 				EEEF90762846B08000DCB9E5 /* Assets.xcassets */,
 				EEEF90782846B08000DCB9E5 /* Preview Content */,
 			);
@@ -101,6 +103,7 @@
 		EEEF908B2846B5AC00DCB9E5 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				EEEF908E2846BA9300DCB9E5 /* HomeViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 			files = (
 				EEEF908D2846B5D900DCB9E5 /* GlobalHelpers.swift in Sources */,
 				EEEF90812846B2D500DCB9E5 /* HomeView.swift in Sources */,
+				EEEF908F2846BA9300DCB9E5 /* HomeViewModel.swift in Sources */,
 				EEEF90752846B07E00DCB9E5 /* ContentView.swift in Sources */,
 				EEEF90882846B53B00DCB9E5 /* StandardHomeMovie.swift in Sources */,
 				EEEF90862846B4ED00DCB9E5 /* Movie.swift in Sources */,
