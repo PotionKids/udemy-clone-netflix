@@ -7,12 +7,13 @@
 
 import Foundation
 
+typealias Category = String
+
 class HomeViewModel: ObservableObject {
-    typealias Category = String
     
     @Published var movies: [Category: [Movie]] = [:]
     public var categories: [Category] {
-        movies.keys.map {String($0)}
+        movies.keys.map {String($0)}.sorted()
     }
     
     public func getMovies(for category: Category) -> [Movie] {
@@ -26,5 +27,8 @@ class HomeViewModel: ObservableObject {
     func setupMovies() {
         movies[Constants.Categories.trendingNow] = moviesTrendingNow
         movies[Constants.Categories.standupComedy] = standupComedy
+        movies[Constants.Categories.newReleases] = newReleases
+        movies[Constants.Categories.watchItAgain] = watchItAgain
+        movies[Constants.Categories.sciFiMovies] = sciFi
     }
 }
