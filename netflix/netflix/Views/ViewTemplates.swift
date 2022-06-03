@@ -13,39 +13,63 @@ struct ViewTemplates: View {
             Color.black.ignoresSafeArea()
             VStack {
                 HStack {
-                    whitePlayButtonHalfWidth
-                    whiteMyListButtonHalfWidthUnselected
+                    TemplatedViews.whitePlayButtonHalfWidth
+                    TemplatedViews.whiteMyListButtonHalfWidthUnselected
                 }
                 HStack {
-                    whitePlayButtonThirdWidth
-                    whitePlayButtonThirdWidth
-                    whitePlayButtonThirdWidth
+                    TemplatedViews.whitePlayButtonThirdWidth
+                    TemplatedViews.whitePlayButtonThirdWidth
+                    TemplatedViews.whitePlayButtonThirdWidth
                 }
                 HStack {
-                    whitePlayButtonFullWidth
+                    TemplatedViews.whitePlayButtonFullWidth
                 }
+                TemplatedViews.redPlayButtonFullWidth
+                TemplatedViews.redPlayButtonFullFlexWidth
             }
         }
     }
+}
+
+struct TemplatedViews {
+    static let whitePlayButtonFullWidth = HWhitePlayButtonXWidth(frameWidthScaling: 1)
+    static let whitePlayButtonHalfWidth = HWhitePlayButtonXWidth(frameWidthScaling: 2)
+    static let whitePlayButtonThirdWidth = HWhitePlayButtonXWidth(frameWidthScaling: 3.15)
     
-    var whitePlayButtonFullWidth: some View {
-        HWhitePlayButtonXWidth(frameWidthScaling: 1)
+    static let whiteMyListButtonHalfWidthSelected = HWhiteMyListButtonXWidth(frameWidthScaling: 2.1)
+    static let whiteMyListButtonHalfWidthUnselected = HButtonLabelWhiteXWidth(imageName: "plus", label: "My List", frameWidthScaling: 2.1)
+    static let redPlayButtonFullWidth = HRedPlayButtonXWidth(frameWidthScaling: 1.01, frameHeightScaling: 20)
+    static let redPlayButtonFullFlexWidth = HStackFlexibleButtonLabel(frameHeightScaling: 20, backgroundColor: Constants.Colors.netflixRed, foregroundColor: .white)
+    static let myListVButton = SmallVerticalButton(description: "My List", isOnImageName: "checkmark", isOffImageName: "plus", isOn: true) {
+        //
     }
-    
-    var whitePlayButtonHalfWidth: some View {
-        HWhitePlayButtonXWidth(frameWidthScaling: 2)
+    static let likedVButton = SmallVerticalButton(description: "Liked", isOnImageName: "hand.thumbsup.fill", isOffImageName: "hand.thumbsup", isOn: true) {
+        //
     }
-    
-    var whitePlayButtonThirdWidth: some View {
-        HWhitePlayButtonXWidth(frameWidthScaling: 3.2)
+    static let shareVButton = SmallVerticalButton(description: "Share", isOnImageName: "paperplane", isOffImageName: "paperplane", isOn: true) {
+        //
     }
+}
+
+struct HColorPlayButtonXWidth: View {
+    var backgroundColor: Color = .white
+    var foregroundColor: Color = .black
+    var frameWidthScaling: CGFloat
+    var frameHeightScaling: CGFloat
     
-    var whiteMyListButtonHalfWidthSelected: some View {
-        HWhiteMyListButtonXWidth(frameWidthScaling: 2.1)
+    var body: some View {
+        HStackButtonLabel(imageName: "play.fill", label: "Play", backgroundColor: backgroundColor, foregroundColor: foregroundColor, frameWidthScaling: frameWidthScaling, frameHeightScaling: frameHeightScaling)
     }
+}
+
+//struct HRedPlayButton
+
+struct HRedPlayButtonXWidth: View {
+    var frameWidthScaling: CGFloat
+    var frameHeightScaling: CGFloat
     
-    var whiteMyListButtonHalfWidthUnselected: some View {
-        HButtonLabelWhiteXWidth(imageName: "plus", label: "My List", frameWidthScaling: 2.1)
+    var body: some View {
+        HColorPlayButtonXWidth(backgroundColor: Constants.Colors.netflixRed, foregroundColor: .white, frameWidthScaling: frameWidthScaling, frameHeightScaling: frameHeightScaling)
     }
 }
 

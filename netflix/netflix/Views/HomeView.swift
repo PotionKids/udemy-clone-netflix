@@ -40,7 +40,7 @@ struct HomeView: View {
         ForEach(categories, id: \.self) { category in
             VStack {
                 HStack {
-                    Text(category).font(.title3).bold()
+                    Text(category).font(.netflixSans(for: .bold, relativeTo: .title3, size: 18))
                     Spacer()
                 }
                 hScrollMovies(for: category)

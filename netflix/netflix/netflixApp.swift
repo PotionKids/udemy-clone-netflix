@@ -11,7 +11,8 @@ import SwiftUI
 struct netflixApp: App {
     var body: some Scene {
         WindowGroup {
-            HomeView()
+//            HomeView()
+            MovieDetailView(movie: theLastKingdom)
         }
     }
 }

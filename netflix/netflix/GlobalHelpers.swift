@@ -6,8 +6,16 @@
 //
 
 import Foundation
+import SwiftUI
 
 struct Constants {
+    struct Colors {
+//        static let netflixRed = Color(red: 229 / 255, green: 9 / 255, blue: 20 / 255)
+        static let delta:CGFloat = 10
+        static let k: CGFloat = -2.3
+        static let netflixRed = Color(red: (229 + k * delta) / 255, green: (9 + k * delta) / 255, blue: (20 + k * delta) / 255)
+    }
+    
     struct MovieThumbnailURLs {
         
         //MARK: Categories
@@ -96,6 +104,7 @@ let theLastKingdom = Movie  (
                                 id: UUID().uuidString,
                                 name: Constants.MovieNames.theLastKingdom,
                                 thumbnailURL: Constants.MovieThumbnailURLs.theLastKingdom,
+                                promotionalHeadline: "Watch Season 5 Now",
                                 categories: categories
                             )
 let ertugrul       = Movie  (

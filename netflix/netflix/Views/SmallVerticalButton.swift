@@ -22,7 +22,7 @@ struct SmallVerticalButton: View {
             VStack {
                 Image(systemName: isOn ? isOnImageName : isOffImageName).font(.title2)
                     .padding(.vertical, 0.4)
-                Text(description).font(.system(size: 14))
+                Text(description).font(.netflixSansLightBody(size: 15))
             }
             .foregroundColor(.white)
         }

@@ -15,7 +15,7 @@ struct HStackCategories: View {
         HStack {
             ForEach(categories, id: \.self) { category in
                 HStack {
-                    Text(category).font(.body)
+                    Text(category).font(.netflixSansLightBody(size: 16))
                     if category != categories.last {
                         Image(systemName: delimiter ?? "")
                             .foregroundColor(.blue)
