@@ -26,6 +26,7 @@ struct MovieDetailView: View {
                     currentSeasonAndEpisodeToDisplay(for: movie)
                     castInfo(for: movie)
                     buttons
+                    CustomTabSwitcher()
                 }
                 .foregroundColor(.white)
                 .padding(.horizontal)

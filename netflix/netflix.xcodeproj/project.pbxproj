@@ -30,6 +30,8 @@
 		EEEF90B62849065E00DCB9E5 /* FontView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEF90B52849065E00DCB9E5 /* FontView.swift */; };
 		EEEF90B82849162A00DCB9E5 /* FontExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEF90B72849162A00DCB9E5 /* FontExtensions.swift */; };
 		EEEF90BA28495CFA00DCB9E5 /* HStackFlexibleButtonLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEF90B928495CFA00DCB9E5 /* HStackFlexibleButtonLabel.swift */; };
+		EEEF90BC284AC2D300DCB9E5 /* CustomTabSwitcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEF90BB284AC2D300DCB9E5 /* CustomTabSwitcher.swift */; };
+		EEEF90BE284ACA5600DCB9E5 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEF90BD284ACA5600DCB9E5 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +59,8 @@
 		EEEF90B52849065E00DCB9E5 /* FontView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontView.swift; sourceTree = "<group>"; };
 		EEEF90B72849162A00DCB9E5 /* FontExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtensions.swift; sourceTree = "<group>"; };
 		EEEF90B928495CFA00DCB9E5 /* HStackFlexibleButtonLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HStackFlexibleButtonLabel.swift; sourceTree = "<group>"; };
+		EEEF90BB284AC2D300DCB9E5 /* CustomTabSwitcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabSwitcher.swift; sourceTree = "<group>"; };
+		EEEF90BD284ACA5600DCB9E5 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +97,7 @@
 				EEEF90AE2849034E00DCB9E5 /* Info.plist */,
 				EEEF90A2284901C600DCB9E5 /* Fonts */,
 				EEEF90722846B07E00DCB9E5 /* netflixApp.swift */,
+				EEEF90BD284ACA5600DCB9E5 /* Extensions.swift */,
 				EEEF908C2846B5D900DCB9E5 /* GlobalHelpers.swift */,
 				EEEF908A2846B5A300DCB9E5 /* Model */,
 				EEEF90892846B59400DCB9E5 /* Views */,
@@ -126,6 +131,7 @@
 				EEEF909C2847E22C00DCB9E5 /* ViewStyling.swift */,
 				EEEF909E28480B0000DCB9E5 /* MovieDetailView.swift */,
 				EEEF90B52849065E00DCB9E5 /* FontView.swift */,
+				EEEF90BB284AC2D300DCB9E5 /* CustomTabSwitcher.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -243,6 +249,7 @@
 				EEEF90BA28495CFA00DCB9E5 /* HStackFlexibleButtonLabel.swift in Sources */,
 				EEEF90752846B07E00DCB9E5 /* ContentView.swift in Sources */,
 				EEEF90882846B53B00DCB9E5 /* StandardHomeMovie.swift in Sources */,
+				EEEF90BE284ACA5600DCB9E5 /* Extensions.swift in Sources */,
 				EEEF90B82849162A00DCB9E5 /* FontExtensions.swift in Sources */,
 				EEEF909F28480B0000DCB9E5 /* MovieDetailView.swift in Sources */,
 				EEEF90912846DA5C00DCB9E5 /* TopMoviePreview.swift in Sources */,
@@ -253,6 +260,7 @@
 				EEEF909D2847E22C00DCB9E5 /* ViewStyling.swift in Sources */,
 				EEEF90932846E2F400DCB9E5 /* SmallVerticalButton.swift in Sources */,
 				EEEF90B62849065E00DCB9E5 /* FontView.swift in Sources */,
+				EEEF90BC284AC2D300DCB9E5 /* CustomTabSwitcher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
