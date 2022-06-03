@@ -40,8 +40,8 @@ struct Movie: Identifiable {
     
     struct Episode: Identifiable {
         var id: Int = 0
-        var title: String = "Ill Omens"
-        var description: String = "Ill omens and border raids make Uhtred extra-vigilant at his northern outpost. King Sigtryggr is visited by his brother Rognvaldr"
+        var title: String = "Bad Omens"
+        var description: String = "Bad omens and border raids make Uhtred extra-vigilant at his northern outpost. King Sigtryggr is visited by his brother Rognvaldr"
         var thumbnailURL = URL(string: "")
         var videoURL = URL(string: "")
     }
@@ -61,10 +61,10 @@ struct Movie: Identifiable {
     struct CurrentSeasonAndEpisode {
         var seasonNumber: Int = 0
         var episodeNumber: Int = 0
-        var title = "Ill Omens"
-        var description = "Ill omens and border raids make Uhtred extra-vigilant at his northern outpost. King Sigtryggr is visited by his brother Rognvaldr"
+        var title = "Bad Omens"
+        var description = "Bad omens and border raids make Uhtred extra-vigilant at his northern outpost. King Sigtryggr is visited by his brother Rognvaldr"
         
-        init(seasonNumber: Int = 0, episodeNumber: Int = 0, title: String = "Ill Omens", description: String = "Ill omens and border raids make Uhtred extra-vigilant at his northern outpost. King Sigtryggr is visited by his brother Rognvaldr") {
+        init(seasonNumber: Int = 0, episodeNumber: Int = 0, title: String = "Bad Omens", description: String = "Bad omens and border raids make Uhtred extra-vigilant at his northern outpost. King Sigtryggr is visited by his brother Rognvaldr") {
             self.seasonNumber = seasonNumber
             self.episodeNumber = episodeNumber
             self.title = title

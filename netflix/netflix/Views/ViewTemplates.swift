@@ -32,6 +32,10 @@ struct ViewTemplates: View {
 }
 
 struct TemplatedViews {
+    static let screen = UIScreen.main.bounds
+    static let screenWidth = screen.width
+    static let screenHeight = screen.height
+    
     static let whitePlayButtonFullWidth = HWhitePlayButtonXWidth(frameWidthScaling: 1)
     static let whitePlayButtonHalfWidth = HWhitePlayButtonXWidth(frameWidthScaling: 2)
     static let whitePlayButtonThirdWidth = HWhitePlayButtonXWidth(frameWidthScaling: 3.15)
@@ -48,6 +52,33 @@ struct TemplatedViews {
     }
     static let shareVButton = SmallVerticalButton(description: "Share", isOnImageName: "paperplane", isOffImageName: "paperplane", isOn: true) {
         //
+    }
+    
+    static var xButtonLabel: some View {
+        ZStack {
+            Circle()
+                .foregroundColor(.black)
+                .frame(width: screenWidth / 15, height: screenWidth / 15)
+            Image(systemName: "xmark")
+                .foregroundColor(.white)
+                .font(.body)
+        }
+    }
+    
+    static var xButtonTopRight: some View {
+        VStack {
+            HStack {
+                Spacer()
+                Button {
+                    //
+                } label: {
+                    TemplatedViews.xButtonLabel
+                }
+                
+            }
+            .padding(.horizontal)
+            Spacer()
+        }
     }
 }
 
