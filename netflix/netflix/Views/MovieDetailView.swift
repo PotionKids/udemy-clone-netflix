@@ -26,7 +26,7 @@ struct MovieDetailView: View {
                     currentSeasonAndEpisodeToDisplay(for: movie)
                     castInfo(for: movie)
                     buttons
-                    CustomTabSwitcher()
+                    CustomTabSwitcher(movie: movie)
                 }
                 .foregroundColor(.white)
                 .padding(.horizontal)
@@ -36,7 +36,7 @@ struct MovieDetailView: View {
     
     var movieThumbnail: some View {
         ZStack {
-            StandardHomeMovie(movie: movie)
+            StandardMovieDetail(movie: movie)
                 .frame(width: screenWidth / 3)
                 .shadow(color: .black, radius: 5, x: 3, y: 3)
             newEpisodes

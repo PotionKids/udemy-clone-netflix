@@ -30,5 +30,6 @@ class HomeViewModel: ObservableObject {
         movies[Constants.Categories.newReleases] = newReleases
         movies[Constants.Categories.watchItAgain] = watchItAgain
         movies[Constants.Categories.sciFiMovies] = sciFi
+        movies[Constants.Categories.historicalDocumentaries] = historicalDocumentaries
     }
 }

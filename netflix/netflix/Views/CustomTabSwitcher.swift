@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct CustomTabSwitcher: View {
+    var movie: Movie
     @State private var currentTab: CustomTab = .episodes
     var tabs: [CustomTab] = [.episodes, .trailers, .more]
     
@@ -43,7 +44,7 @@ struct CustomTabSwitcher: View {
             case .trailers:
                 Text("Trailers & More")
             case .more:
-                Text("More Like This")
+                MoreLikeThisView(movie: movie)
             }
         }
         .foregroundColor(.white)
@@ -61,7 +62,7 @@ struct CustomTabSwitcher_Previews: PreviewProvider {
         ZStack {
             Color.black.ignoresSafeArea()
             
-            CustomTabSwitcher()
+            CustomTabSwitcher(movie: theLastKingdom)
         }
     }
 }

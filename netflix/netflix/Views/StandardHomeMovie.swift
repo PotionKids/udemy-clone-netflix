@@ -12,7 +12,7 @@ struct StandardHomeMovie: View {
     var movie: Movie
     
     var body: some View {
-        KFImage(movie.thumbnailURL).resizable().scaledToFit()
+        KFImage(movie.thumbnailURL).resizable().resizable().scaledToFill()
     }
 }
 

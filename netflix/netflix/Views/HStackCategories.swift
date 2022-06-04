@@ -29,6 +29,6 @@ struct HStackCategories: View {
 
 struct HStackCategories_Previews: PreviewProvider {
     static var previews: some View {
-        HStackCategories(categories: categories, delimiter: "circle.fill")
+        HStackCategories(categories: Constants.categories, delimiter: "circle.fill")
     }
 }

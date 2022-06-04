@@ -75,11 +75,13 @@ struct Movie: Identifiable {
     var id: String = UUID().uuidString
     var name: String
     var thumbnailURL: URL
+    var detailImageURL: URL?
     var date: Date = Date.now
     var movieType: MovieType = .tvshow
     var rating: MovieType.Rating = .TVMA
     var resolution: Resolution = .HD
     var cast: Cast = Cast()
+    var moreLikeThis: [Movie] = []
     
     var promotionalHeadline: String?
     var currentSeason: Int? = 5
@@ -87,7 +89,7 @@ struct Movie: Identifiable {
     
     var seasons = [Season(), Season(), Season(), Season(), Season()]
     
-    var categories: [Category] = []
+    var categories: [Category] = Constants.categories
     var liked = true                // MARK: Comment - For initial testing purposes. Make sure to default
                                     // this to false in production.
     

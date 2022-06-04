@@ -32,7 +32,7 @@ struct TopMoviePreview: View {
     }
     
     var categoriesList: some View {
-        HStackCategories(categories: categories, delimiter: "circle.fill")
+        HStackCategories(categories: Constants.categories, delimiter: "circle.fill")
     }
     
     var buttons: some View {
